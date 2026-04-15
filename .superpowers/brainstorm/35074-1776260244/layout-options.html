@@ -1,0 +1,122 @@
+<h2>¿Qué estructura de navegación preferís?</h2>
+<p class="subtitle">Cómo se organiza la rutina PPL en la app</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#111;padding:16px;font-family:monospace;font-size:11px;line-height:1.8;color:#aaa;">
+        <div style="background:#e05020;color:#000;padding:8px 12px;margin-bottom:12px;font-weight:bold;text-align:center;font-size:14px;">RUTINA PPL — FUERZA & VOLUMEN</div>
+        <div style="display:flex;gap:4px;margin-bottom:12px;">
+          <div style="flex:1;background:#e05020;color:#000;padding:6px;text-align:center;font-size:10px;font-weight:bold;">LUN</div>
+          <div style="flex:1;background:#222;padding:6px;text-align:center;font-size:10px;">MAR</div>
+          <div style="flex:1;background:#222;padding:6px;text-align:center;font-size:10px;">MIÉ</div>
+          <div style="flex:1;background:#222;padding:6px;text-align:center;font-size:10px;">JUE</div>
+          <div style="flex:1;background:#222;padding:6px;text-align:center;font-size:10px;">VIE</div>
+          <div style="flex:1;background:#222;padding:6px;text-align:center;font-size:10px;">SÁB</div>
+        </div>
+        <div style="background:#181818;border:1px solid #333;padding:10px;margin-bottom:6px;display:flex;align-items:center;gap:8px;">
+          <div style="width:50px;height:40px;background:#333;"></div>
+          <div><div style="color:#fff;font-size:12px;">Flat DB Bench Press</div><div style="font-size:9px;">4×10 · 90s rest</div></div>
+        </div>
+        <div style="background:#181818;border:1px solid #333;padding:10px;margin-bottom:6px;display:flex;align-items:center;gap:8px;">
+          <div style="width:50px;height:40px;background:#333;"></div>
+          <div><div style="color:#fff;font-size:12px;">Incline DB Press</div><div style="font-size:9px;">4×10 · 90s rest</div></div>
+        </div>
+        <div style="background:#181818;border:1px solid #333;padding:10px;display:flex;align-items:center;gap:8px;">
+          <div style="width:50px;height:40px;background:#333;"></div>
+          <div><div style="color:#fff;font-size:12px;">Smith Machine Bench</div><div style="font-size:9px;">4×10 · 90s rest</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Single Page con Tabs</h3>
+      <p>Similar a tu HTML actual. Una sola página, tabs para cada día (LUN–SÁB). Todo visible sin navegar. Estilo dark con acentos naranjas.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#111;padding:16px;font-family:monospace;font-size:11px;line-height:1.8;color:#aaa;">
+        <div style="background:#e05020;color:#000;padding:8px 12px;margin-bottom:12px;font-weight:bold;text-align:center;font-size:14px;">RUTINA PPL</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <div style="background:#181818;border:1px solid #333;padding:14px;text-align:center;">
+            <div style="color:#e05020;font-size:16px;font-weight:bold;">LUN</div>
+            <div style="color:#fff;font-size:12px;margin-top:4px;">PUSH A</div>
+            <div style="font-size:9px;margin-top:2px;">6 ejercicios</div>
+          </div>
+          <div style="background:#181818;border:1px solid #333;padding:14px;text-align:center;">
+            <div style="color:#2090e0;font-size:16px;font-weight:bold;">MAR</div>
+            <div style="color:#fff;font-size:12px;margin-top:4px;">PULL A</div>
+            <div style="font-size:9px;margin-top:2px;">6 ejercicios</div>
+          </div>
+          <div style="background:#181818;border:1px solid #333;padding:14px;text-align:center;">
+            <div style="color:#20c050;font-size:16px;font-weight:bold;">MIÉ</div>
+            <div style="color:#fff;font-size:12px;margin-top:4px;">LEGS</div>
+            <div style="font-size:9px;margin-top:2px;">5 ejercicios</div>
+          </div>
+          <div style="background:#181818;border:1px solid #333;padding:14px;text-align:center;">
+            <div style="color:#e05020;font-size:16px;font-weight:bold;">JUE</div>
+            <div style="color:#fff;font-size:12px;margin-top:4px;">PUSH B</div>
+            <div style="font-size:9px;margin-top:2px;">5 ejercicios</div>
+          </div>
+          <div style="background:#181818;border:1px solid #333;padding:14px;text-align:center;">
+            <div style="color:#2090e0;font-size:16px;font-weight:bold;">VIE</div>
+            <div style="color:#fff;font-size:12px;margin-top:4px;">PULL B</div>
+            <div style="font-size:9px;margin-top:2px;">6 ejercicios</div>
+          </div>
+          <div style="background:#181818;border:1px solid #333;padding:14px;text-align:center;">
+            <div style="color:#666;font-size:16px;font-weight:bold;">SÁB</div>
+            <div style="color:#fff;font-size:12px;margin-top:4px;">REST</div>
+            <div style="font-size:9px;margin-top:2px;">Descanso</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Home + Páginas por día</h3>
+      <p>Landing con grid de los 6 días como cards. Click en un día abre su página dedicada con los ejercicios, imágenes grandes y detalle. Más visual, más espacio para fotos.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#111;padding:16px;font-family:monospace;font-size:11px;line-height:1.8;color:#aaa;">
+        <div style="display:flex;height:180px;">
+          <div style="width:60px;background:#0a0a0a;border-right:1px solid #222;padding:8px 4px;display:flex;flex-direction:column;gap:6px;align-items:center;">
+            <div style="color:#e05020;font-size:9px;font-weight:bold;padding:4px;background:#1a0800;width:100%;text-align:center;">P-A</div>
+            <div style="color:#666;font-size:9px;padding:4px;width:100%;text-align:center;">PL-A</div>
+            <div style="color:#666;font-size:9px;padding:4px;width:100%;text-align:center;">LEG</div>
+            <div style="color:#666;font-size:9px;padding:4px;width:100%;text-align:center;">P-B</div>
+            <div style="color:#666;font-size:9px;padding:4px;width:100%;text-align:center;">PL-B</div>
+            <div style="color:#666;font-size:9px;padding:4px;width:100%;text-align:center;">REST</div>
+          </div>
+          <div style="flex:1;padding:10px;">
+            <div style="color:#e05020;font-size:11px;font-weight:bold;margin-bottom:8px;">PUSH A — Lunes</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+              <div style="background:#181818;border:1px solid #333;padding:6px;">
+                <div style="width:100%;height:30px;background:#333;margin-bottom:4px;"></div>
+                <div style="color:#fff;font-size:9px;">DB Bench Press</div>
+              </div>
+              <div style="background:#181818;border:1px solid #333;padding:6px;">
+                <div style="width:100%;height:30px;background:#333;margin-bottom:4px;"></div>
+                <div style="color:#fff;font-size:9px;">Incline Press</div>
+              </div>
+              <div style="background:#181818;border:1px solid #333;padding:6px;">
+                <div style="width:100%;height:30px;background:#333;margin-bottom:4px;"></div>
+                <div style="color:#fff;font-size:9px;">Smith Bench</div>
+              </div>
+              <div style="background:#181818;border:1px solid #333;padding:6px;">
+                <div style="width:100%;height:30px;background:#333;margin-bottom:4px;"></div>
+                <div style="color:#fff;font-size:9px;">DB OHP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Sidebar + Content</h3>
+      <p>Sidebar fija con los días a la izquierda. Contenido principal a la derecha con grid de ejercicios. Navegación rápida entre días sin cambiar de página. Ideal para desktop.</p>
+    </div>
+  </div>
+</div>
