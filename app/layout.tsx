@@ -1,30 +1,28 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond, DM_Sans } from 'next/font/google'
+import { Bebas_Neue, Barlow } from 'next/font/google'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import WhatsAppFloat from '@/components/WhatsAppFloat'
 import ScrollProgress from '@/components/ScrollProgress'
 import './globals.css'
 
-const cormorant = Cormorant_Garamond({
+const bebasNeue = Bebas_Neue({
   subsets: ['latin'],
-  weight: ['300', '400'],
-  style: ['normal', 'italic'],
-  variable: '--font-cormorant',
+  weight: ['400'],
+  variable: '--font-bebas',
   display: 'swap',
 })
 
-const dmSans = DM_Sans({
+const barlow = Barlow({
   subsets: ['latin'],
-  weight: ['200', '300', '400'],
-  variable: '--font-dm-sans',
+  weight: ['300', '400', '600', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-barlow',
   display: 'swap',
 })
 
 export const metadata: Metadata = {
-  title: 'Cannabis del Paraná — Asociación Civil',
-  description:
-    'Asociación civil dedicada a la fitoterapia con cannabis medicinal en Rosario, Santa Fe. Fitopreparados artesanales, asesoramiento y acompañamiento a pacientes.',
+  title: 'Gym Routine — PPL Fuerza & Volumen',
+  description: 'Rutina de entrenamiento PPL (Push/Pull/Legs) para fuerza y volumen. 5 días activos con progresión semanal.',
 }
 
 export default function RootLayout({
@@ -33,10 +31,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" className={`${cormorant.variable} ${dmSans.variable}`}>
+    <html lang="es" className={`${bebasNeue.variable} ${barlow.variable}`}>
       <body>
         <ScrollProgress />
-        <WhatsAppFloat />
         <Nav />
         {children}
         <Footer />
