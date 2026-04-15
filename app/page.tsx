@@ -1,26 +1,20 @@
 import Hero from '@/components/Hero'
-import About from '@/components/About'
-import HorizontalScroll from '@/components/HorizontalScroll'
-import FeaturedProjects from '@/components/FeaturedProjects'
-import Services from '@/components/Services'
-import Team from '@/components/Team'
-import Contact from '@/components/Contact'
+import RoutineCard from '@/components/RoutineCard'
 import ScrollToTop from '@/components/ScrollToTop'
-import { categories } from '@/data/categories'
-import { projects } from '@/data/projects'
-import { services } from '@/data/services'
-import { team } from '@/data/team'
+import { routines } from '@/data/routines'
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <About />
-      <HorizontalScroll categories={categories} />
-      <FeaturedProjects projects={projects} />
-      <Services services={services} />
-      <Team members={team} />
-      <Contact />
+      <section id="rutinas" className="max-w-[1100px] mx-auto px-6 py-16">
+        <h2 className="font-heading text-[32px] tracking-[2px] mb-8">RUTINAS</h2>
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-4">
+          {routines.map((routine) => (
+            <RoutineCard key={routine.slug} routine={routine} />
+          ))}
+        </div>
+      </section>
       <ScrollToTop />
     </>
   )
